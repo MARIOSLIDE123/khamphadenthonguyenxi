@@ -58,6 +58,10 @@ const SAMPLE_BENCHMARKS: LeaderboardItem[] = [
   }
 ];
 
+export const DEFAULT_APPS_SCRIPT_URL =
+  'https://script.google.com/macros/s/AKfycbyd-ezIIFWAIZYDSyiBxi7tHY8yXERU2dqtGwJFWJfys3oNEYU3J0Hb9iT6Rt4rttcq/exec';
+export const DEFAULT_SPREADSHEET_ID = '1m2NVC4nfXyAsi1jjQheZcYgP3q8BoHDXp0Za9ijgfa0';
+
 export function getGoogleAppsScriptConfig(): { url: string; secret: string } {
   try {
     const envUrl = (import.meta as any).env?.VITE_APPS_SCRIPT_URL || '';
@@ -65,11 +69,11 @@ export function getGoogleAppsScriptConfig(): { url: string; secret: string } {
     const storedUrl = localStorage.getItem(GAS_URL_KEY) || '';
     const storedSecret = localStorage.getItem(GAS_SECRET_KEY) || '';
     return {
-      url: storedUrl || envUrl,
+      url: storedUrl || envUrl || DEFAULT_APPS_SCRIPT_URL,
       secret: storedSecret || envSecret
     };
   } catch {
-    return { url: '', secret: '' };
+    return { url: DEFAULT_APPS_SCRIPT_URL, secret: '' };
   }
 }
 

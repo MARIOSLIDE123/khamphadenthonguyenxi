@@ -35,7 +35,7 @@ var SHEET_HEADERS = {
  */
 function getSpreadsheet() {
   var props = PropertiesService.getScriptProperties();
-  var sheetId = props.getProperty('SPREADSHEET_ID');
+  var sheetId = props.getProperty('SPREADSHEET_ID') || '1m2NVC4nfXyAsi1jjQheZcYgP3q8BoHDXp0Za9ijgfa0';
   if (sheetId && sheetId.trim() !== '') {
     return SpreadsheetApp.openById(sheetId);
   }

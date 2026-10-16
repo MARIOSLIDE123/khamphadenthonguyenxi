@@ -327,14 +327,29 @@ export const LearnerJourneyModal: React.FC<Props> = ({ isOpen, onClose }) => {
           {/* Tab 3: Google Sheets Sync Settings */}
           {activeTab === 'sheets' && (
             <div className="space-y-4">
-              <div className="p-4 bg-green-50 rounded-2xl border border-green-200 text-sm text-green-900 space-y-2">
-                <div className="flex items-center gap-2 font-bold text-green-800">
-                  <FileSpreadsheet className="w-5 h-5 text-green-700" />
-                  <span>Đồng bộ 6 Sheet thời gian thực với Google Apps Script</span>
+              <div className="p-4 bg-green-50 rounded-2xl border border-green-200 text-sm text-green-900 space-y-3">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <div className="flex items-center gap-2 font-bold text-green-800">
+                    <FileSpreadsheet className="w-5 h-5 text-green-700" />
+                    <span>Đồng bộ 6 Sheet thời gian thực với Google Apps Script</span>
+                  </div>
+                  <a
+                    href="https://docs.google.com/spreadsheets/d/1m2NVC4nfXyAsi1jjQheZcYgP3q8BoHDXp0Za9ijgfa0/edit"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#107C41] hover:bg-[#0E6837] text-white text-xs font-bold rounded-xl transition shadow"
+                  >
+                    <span>Mở Google Sheets</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
                 </div>
                 <p className="text-xs text-green-800/90 leading-relaxed">
                   Mỗi khi học sinh đăng ký, trả lời câu hỏi, hoàn thành chủ đề hay tham gia đấu trường, điểm số và thành tích được đồng bộ tự động vào Google Sheets để giáo viên theo dõi và xếp hạng trực tiếp.
                 </p>
+                <div className="p-2.5 bg-white/90 rounded-xl border border-green-200 text-xs flex flex-wrap items-center justify-between gap-2">
+                  <span className="text-gray-600">ID Bảng tính:</span>
+                  <code className="font-mono text-green-800 font-bold select-all">1m2NVC4nfXyAsi1jjQheZcYgP3q8BoHDXp0Za9ijgfa0</code>
+                </div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 pt-1 text-xs">
                   <span className="bg-white/80 px-2 py-1 rounded border border-green-300">📊 1. Students</span>
                   <span className="bg-white/80 px-2 py-1 rounded border border-green-300">⏱️ 2. Sessions</span>

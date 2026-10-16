@@ -4,11 +4,12 @@
  */
 
 export async function forwardToGoogleAppsScript(action: string, payload: Record<string, any>): Promise<any> {
-  const scriptUrl = process.env.APPS_SCRIPT_URL;
-  const secret = process.env.APPS_SCRIPT_SECRET;
+  const scriptUrl =
+    process.env.APPS_SCRIPT_URL ||
+    'https://script.google.com/macros/s/AKfycbyd-ezIIFWAIZYDSyiBxi7tHY8yXERU2dqtGwJFWJfys3oNEYU3J0Hb9iT6Rt4rttcq/exec';
+  const secret = process.env.APPS_SCRIPT_SECRET || '';
 
   if (!scriptUrl) {
-    // Apps script URL not configured yet
     return null;
   }
 
