@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-do-son: #B93632;
+    --color-vang-kim: #D9A441;
+    --color-xanh-ngoc: #307A67;
+    --color-giay-do: #FFF6E5;
+    --color-xanh-dam: #21354D;
+  }
+
+  body {
+    background-color: #FFF6E5;
+    color: #21354D;
+    font-family: 'Be Vietnam Pro', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-heritage {
+    font-family: 'Noto Serif', serif;
+  }
+
+  .font-title {
+    font-family: 'Cinzel', 'Noto Serif', serif;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5EADA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D9A441;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B93632;
+}
+
+/* Traditional borders and motifs */
+.pattern-heritage {
+  background-color: #FFF6E5;
+  background-image: radial-gradient(#D9A441 0.75px, transparent 0.75px), radial-gradient(#307A67 0.75px, #FFF6E5 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  background-opacity: 0.15;
+}
+
+.heritage-border {
+  border: 2px solid #D9A441;
+  box-shadow: 0 0 0 3px #FFF6E5, 0 0 0 4px #B93632;
+}
+
+.gold-glow {
+  box-shadow: 0 4px 20px -2px rgba(217, 164, 65, 0.35);
+}
+
+.crimson-glow {
+  box-shadow: 0 4px 20px -2px rgba(185, 54, 50, 0.35);
+}

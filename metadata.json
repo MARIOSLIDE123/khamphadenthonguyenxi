@@ -1,0 +1,6 @@
+{
+  "name": "Hành Trình Khám Phá Đền Thờ Nguyễn Xí",
+  "description": "Ứng dụng học tập và khám phá di tích quốc gia đặc biệt Đền thờ Nguyễn Xí (xã Đông Lộc, Nghệ An) với tư liệu lịch sử, tham quan 360°, câu hỏi tương tác và đấu trường trí tuệ.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
