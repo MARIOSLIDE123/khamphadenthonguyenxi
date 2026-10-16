@@ -82,7 +82,7 @@ export const LeaderboardPage: React.FC<Props> = ({ onBackToHome }) => {
   const currentLearnerRank = leaderboard.find((item) => item.studentId === learner?.studentId);
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 space-y-8">
+    <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 py-6 md:py-8 space-y-8">
       {/* Navigation & Header */}
       <div className="flex flex-wrap items-center justify-between gap-4">
         <button

@@ -87,7 +87,7 @@ export const Tour360Page: React.FC<Props> = ({ onBackToHome }) => {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 space-y-8">
+    <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 py-6 md:py-8 space-y-8">
       {/* Navigation */}
       <div className="flex items-center justify-between">
         <button
@@ -185,7 +185,7 @@ export const Tour360Page: React.FC<Props> = ({ onBackToHome }) => {
               </span>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">
               {observationItems.map((item) => {
                 const isChecked = checkedList.includes(item.id);
                 return (

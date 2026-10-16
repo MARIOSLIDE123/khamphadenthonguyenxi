@@ -44,7 +44,7 @@ const AppContent: React.FC = () => {
       {/* Navigation Bar (Desktop & Mobile Pills) */}
       {isRegistered && (
         <nav className="bg-white/80 backdrop-blur-sm border-b border-[#D9A441]/30 sticky top-[61px] md:top-[69px] z-30">
-          <div className="max-w-7xl mx-auto px-4 overflow-x-auto no-scrollbar py-2">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 overflow-x-auto no-scrollbar py-2">
             <div className="flex items-center gap-1.5 md:gap-3 min-w-max">
               <button
                 onClick={() => setActiveTab('home')}
@@ -206,7 +206,7 @@ const AppContent: React.FC = () => {
 
       {/* Footer */}
       <footer className="bg-[#21354D] text-white py-8 border-t-4 border-[#D9A441]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-300">
+        <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-300">
           <div className="text-center md:text-left space-y-1">
             <p className="font-bold font-heritage text-[#FFF6E5] text-sm">
               HÀNH TRÌNH KHÁM PHÁ ĐỀN THỜ NGUYỄN XÍ

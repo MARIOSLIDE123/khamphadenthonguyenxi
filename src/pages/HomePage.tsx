@@ -31,7 +31,7 @@ export const HomePage: React.FC<Props> = ({ onNavigate, onOpenBadgesModal }) => 
   const minutes = Math.floor(activeSeconds / 60);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 md:py-8 space-y-8">
+    <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 py-6 md:py-8 space-y-8">
       {/* Hero Welcome Banner */}
       <section className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#B93632] via-[#91201D] to-[#21354D] text-white p-6 md:p-10 shadow-2xl border-4 border-[#D9A441]">
         {/* Background Traditional Watermark Pattern */}
@@ -39,7 +39,7 @@ export const HomePage: React.FC<Props> = ({ onNavigate, onOpenBadgesModal }) => 
           <Building className="w-80 h-80 text-[#D9A441]" />
         </div>
 
-        <div className="relative z-10 max-w-3xl space-y-4">
+        <div className="relative z-10 max-w-4xl space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 bg-[#D9A441]/25 border border-[#D9A441] rounded-full text-xs font-bold text-[#FFF6E5]">
             <Sparkles className="w-3.5 h-3.5 text-[#D9A441]" />
             <span>DI TÍCH QUỐC GIA ĐẶC BIỆT • XÃ ĐÔNG LỘC, TỈNH NGHỆ AN</span>
@@ -80,7 +80,7 @@ export const HomePage: React.FC<Props> = ({ onNavigate, onOpenBadgesModal }) => 
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
           {/* 1. TÌM HIỂU DI TÍCH */}
           <div
             onClick={() => onNavigate('topics')}
@@ -234,7 +234,7 @@ export const HomePage: React.FC<Props> = ({ onNavigate, onOpenBadgesModal }) => 
           {/* 5. BẢNG XẾP HẠNG TOÀN QUỐC */}
           <div
             onClick={() => onNavigate('leaderboard')}
-            className="group relative bg-white hover:bg-amber-50/40 rounded-3xl border-3 border-[#D9A441]/50 hover:border-[#21354D] p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer md:col-span-2 lg:col-span-2"
+            className="group relative bg-white hover:bg-amber-50/40 rounded-3xl border-3 border-[#D9A441]/50 hover:border-[#21354D] p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer md:col-span-2 lg:col-span-2 xl:col-span-1"
           >
             <div className="space-y-4">
               <div className="flex items-center justify-between">

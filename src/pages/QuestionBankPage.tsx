@@ -68,7 +68,7 @@ export const QuestionBankPage: React.FC<Props> = ({ onBackToHome }) => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 space-y-6">
+    <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 py-6 space-y-6">
       {/* Top Bar */}
       <div className="flex flex-wrap items-center justify-between gap-4">
         <button
@@ -206,7 +206,7 @@ export const QuestionBankPage: React.FC<Props> = ({ onBackToHome }) => {
 
       {/* VIEW MODE 2: BROWSE ALL QUESTIONS */}
       {viewMode === 'browser' && (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {filteredQuestions.map((q, idx) => (
             <div
               key={q.id}

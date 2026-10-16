@@ -92,7 +92,7 @@ export const LearnerJourneyModal: React.FC<Props> = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#21354D]/75 backdrop-blur-sm overflow-y-auto">
-      <div className="relative w-full max-w-3xl bg-[#FFF6E5] rounded-3xl shadow-2xl border-4 border-[#D9A441] overflow-hidden my-6">
+      <div className="relative w-full max-w-4xl xl:max-w-5xl bg-[#FFF6E5] rounded-3xl shadow-2xl border-4 border-[#D9A441] overflow-hidden my-6">
         {/* Header */}
         <div className="bg-gradient-to-r from-[#B93632] via-[#8B1A17] to-[#B93632] px-6 py-5 text-white flex items-center justify-between shadow">
           <div className="flex items-center gap-3">

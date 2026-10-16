@@ -59,7 +59,7 @@ export const HeritageTopicsPage: React.FC<Props> = ({ onBackToHome }) => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">
+    <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 py-6 space-y-6">
       {/* Top Banner & Navigation */}
       <div className="flex flex-wrap items-center justify-between gap-4">
         <button
@@ -212,7 +212,7 @@ export const HeritageTopicsPage: React.FC<Props> = ({ onBackToHome }) => {
         /* Danh sách 7 chủ đề */
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* Left Column: Topic List Navigation */}
-          <div className="lg:col-span-4 space-y-3">
+          <div className="lg:col-span-4 xl:col-span-3 space-y-3">
             <div className="p-4 bg-white rounded-2xl border border-[#D9A441]/40 shadow-sm">
               <h3 className="font-bold font-heritage text-[#21354D] text-base mb-1">
                 Các Chủ Đề Lịch Sử
@@ -286,7 +286,7 @@ export const HeritageTopicsPage: React.FC<Props> = ({ onBackToHome }) => {
           </div>
 
           {/* Right Column: Detailed Topic Content */}
-          <div className="lg:col-span-8 space-y-6">
+          <div className="lg:col-span-8 xl:col-span-9 space-y-6">
             <article className="bg-white rounded-3xl border-3 border-[#D9A441]/70 shadow-lg overflow-hidden">
               {/* Topic Hero Image with Caption & Zoom Button */}
               <div

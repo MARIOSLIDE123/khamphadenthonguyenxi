@@ -45,7 +45,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBadgesModal, onNavigateHom
 
   return (
     <header className="sticky top-0 z-40 bg-[#FFF6E5]/95 backdrop-blur-md border-b-2 border-[#D9A441] shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2.5">
+      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 py-2.5">
         <div className="flex flex-wrap items-center justify-between gap-3">
           {/* Logo / Title */}
           <button
