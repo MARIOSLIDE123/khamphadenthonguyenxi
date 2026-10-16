@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { TOPICS_DATA, HISTORICAL_SOURCES } from '../data/topics';
 import { useSession } from '../context/SessionContext';
 import { ImageLightboxModal } from '../components/ImageLightboxModal';
+import { TopicAudioPlayer } from '../components/TopicAudioPlayer';
 import {
   BookOpen,
   CheckCircle2,
@@ -13,7 +14,8 @@ import {
   ArrowLeft,
   Share2,
   ZoomIn,
-  Maximize2
+  Maximize2,
+  Headphones
 } from 'lucide-react';
 
 interface Props {
@@ -251,13 +253,24 @@ export const HeritageTopicsPage: React.FC<Props> = ({ onBackToHome }) => {
                         {isCompleted ? <CheckCircle2 className="w-4 h-4" /> : t.number}
                       </div>
                       <div className="min-w-0">
-                        <h4
-                          className={`text-sm font-bold truncate ${
-                            isSelected ? 'text-[#B93632]' : 'text-[#21354D]'
-                          }`}
-                        >
-                          Chủ đề {t.number}: {t.title}
-                        </h4>
+                        <div className="flex items-center gap-1.5">
+                          <h4
+                            className={`text-sm font-bold truncate ${
+                              isSelected ? 'text-[#B93632]' : 'text-[#21354D]'
+                            }`}
+                          >
+                            Chủ đề {t.number}: {t.title}
+                          </h4>
+                          {t.audioUrl && (
+                            <span
+                              className="inline-flex items-center p-0.5 px-1.5 bg-red-100/80 text-[#B93632] rounded-md text-[10px] font-bold flex-shrink-0"
+                              title="Có giọng đọc thuyết minh"
+                            >
+                              <Headphones className="w-2.5 h-2.5 mr-0.5" />
+                              Audio
+                            </span>
+                          )}
+                        </div>
                         <p className="text-xs text-gray-500 truncate">{t.shortDesc}</p>
                       </div>
                     </div>
@@ -320,6 +333,15 @@ export const HeritageTopicsPage: React.FC<Props> = ({ onBackToHome }) => {
 
               {/* Topic Content Body */}
               <div className="p-6 md:p-8 space-y-6">
+                {/* Audio Narration Player if available */}
+                {activeTopic.audioUrl && (
+                  <TopicAudioPlayer
+                    audioUrl={activeTopic.audioUrl}
+                    topicTitle={activeTopic.title}
+                    topicNumber={activeTopic.number}
+                  />
+                )}
+
                 <div className="text-base text-gray-800 leading-relaxed space-y-4">
                   {activeTopic.contentParagraphs.map((para, idx) => (
                     <p key={idx} className="font-medium text-justify">

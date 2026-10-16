@@ -108,6 +108,7 @@ export interface TopicItem {
   period: string;
   imageUrl: string;
   imageCaption: string;
+  audioUrl?: string;
   contentParagraphs: string[];
   keyFacts: string[];
   interactivePrompt: {

@@ -9,6 +9,7 @@ export const TOPICS_DATA: TopicItem[] = [
     period: 'Thời kỳ Hậu Lê (1397 – 1465)',
     imageUrl: '/images/topics/topic-1.jpg',
     imageCaption: 'Tượng đồng thờ Thái sư Cương Quốc công Nguyễn Xí uy nghiêm tại đền thờ.',
+    audioUrl: '/audio/topics/topic-1.wav',
     contentParagraphs: [
       'Nguyễn Xí (1397 – 1465) sinh ra tại làng Thượng Xá, nay thuộc xã Khánh Hợp (trước đây là xã Nghi Hợp), huyện Nghi Lộc, tỉnh Nghệ An. Từ nhỏ, ông đã nổi tiếng thông minh, nhanh nhẹn, giàu lòng quả cảm và có chí lớn.',
       'Ông là một trong những vị khai quốc công thần kiệt xuất nhất của triều đại Hậu Lê. Với tài thao lược quân sự và lòng trung kiên bất khuất, Nguyễn Xí đã phụng sự và giữ trọng trách phụ chính đại thần qua bốn đời vua Lê: Lê Thái Tổ, Lê Thái Tông, Lê Nhân Tông và vua Lê Thánh Tông.',
@@ -36,6 +37,7 @@ export const TOPICS_DATA: TopicItem[] = [
     period: 'Giai đoạn khởi nghĩa (1418 – 1427)',
     imageUrl: '/images/topics/topic-2.png',
     imageCaption: 'Hình ảnh tái hiện nghĩa sĩ Nguyễn Xí yết kiến chủ tướng Lê Lợi, tham gia nghĩa quân Lam Sơn.',
+    audioUrl: '/audio/topics/topic-2.wav',
     contentParagraphs: [
       'Khi giặc Minh xâm lược bờ cõi nước ta, gieo rắc bao nỗi lầm than cho nhân dân, Nguyễn Xí cùng anh trai là Nguyễn Biện đã sớm tìm đến Lam Sơn (Thanh Hóa) theo phò tá chủ tướng Lê Lợi dấy binh cứu nước.',
       'Nguyễn Xí được Lê Lợi đặc biệt tin yêu, coi như con nuôi và giao trọng trách chỉ huy đội quân thiết đột tinh nhuệ. Ông nổi tiếng mưu lược, huấn luyện đội quân thiện chiến lập nên những kỳ tích vang dội.',
@@ -68,6 +70,7 @@ export const TOPICS_DATA: TopicItem[] = [
     period: 'Thời kỳ kiến thiết đất nước (1428 – 1465)',
     imageUrl: '/images/topics/topic-3.png',
     imageCaption: 'Hình tượng danh tướng Nguyễn Xí cùng đội khuyển binh tinh nhuệ bảo vệ giang sơn (Việt Sử Kiêu Hùng).',
+    audioUrl: '/audio/topics/topic-3.wav',
     contentParagraphs: [
       'Người có công với đất nước không chỉ thể hiện ở tài thao lược nơi trận mạc, mà còn ở tình yêu thương đồng bào và những việc làm thiết thực trong hòa bình. Danh tướng Nguyễn Xí là hình mẫu tiêu biểu cho tinh thần ấy.',
       'Về lại quê hương xứ Nghệ, ông đã hướng dẫn nhân dân khai hoang mở đất, lấn biển, lập nên nhiều làng mạc trù phú tại vùng duyên hải Nghi Lộc, Cửa Lò ngày nay.',
@@ -100,6 +103,7 @@ export const TOPICS_DATA: TopicItem[] = [
     period: 'Xây dựng năm Đinh Hợi (1467)',
     imageUrl: '/images/topics/topic-4.png',
     imageCaption: 'Tư liệu ảnh xưa quý giá về Lăng mộ và Đền thờ Thái sư Cương Quốc công Nguyễn Xí.',
+    audioUrl: '/audio/topics/topic-4.wav',
     contentParagraphs: [
       'Năm 1465, Thái sư Nguyễn Xí tạ thế trong niềm tiếc thương vô hạn của triều đình và trăm họ. Vua Lê Thánh Tông vô cùng thương xót, cho cử quốc tang và truy phong những phẩm hàm cao nhất.',
       'Đến năm Đinh Hợi (1467) – hai năm sau ngày danh tướng qua đời, vua Lê Thánh Tông đã ban sắc chỉ hạ lệnh cho quân dân trích quốc khố và công sức xây dựng khu lăng mộ và đền thờ trang nghiêm ngay trên chính quê hương ông.',
