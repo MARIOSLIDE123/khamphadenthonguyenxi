@@ -16,47 +16,7 @@ const HISTORY_KEY = 'nguyen_xi_history';
 const GAS_URL_KEY = 'nguyen_xi_gas_url';
 const GAS_SECRET_KEY = 'nguyen_xi_gas_secret';
 
-const SAMPLE_BENCHMARKS: LeaderboardItem[] = [
-  {
-    studentId: 'STU_XN001',
-    publicDisplayName: 'Nguyễn Đ. Khải (TH Nghi Hợp)',
-    schoolName: 'Trường Tiểu học Nghi Hợp',
-    totalScore: 135,
-    totalCorrect: 14,
-    totalQuestions: 15,
-    accuracy: 93,
-    activeSeconds: 1420,
-    badgeCount: 5,
-    rank: 1,
-    isCurrent: false
-  },
-  {
-    studentId: 'STU_XN002',
-    publicDisplayName: 'Trần M. Phương (TH Nguyễn Xí)',
-    schoolName: 'Trường Tiểu học Nguyễn Xí',
-    totalScore: 125,
-    totalCorrect: 13,
-    totalQuestions: 15,
-    accuracy: 87,
-    activeSeconds: 1650,
-    badgeCount: 4,
-    rank: 2,
-    isCurrent: false
-  },
-  {
-    studentId: 'STU_XN003',
-    publicDisplayName: 'Lê H. Nam (TH Đông Lộc)',
-    schoolName: 'Trường Tiểu học Đông Lộc',
-    totalScore: 110,
-    totalCorrect: 12,
-    totalQuestions: 15,
-    accuracy: 80,
-    activeSeconds: 1890,
-    badgeCount: 4,
-    rank: 3,
-    isCurrent: false
-  }
-];
+const SAMPLE_BENCHMARKS: LeaderboardItem[] = [];
 
 export const DEFAULT_APPS_SCRIPT_URL =
   'https://script.google.com/macros/s/AKfycbyd-ezIIFWAIZYDSyiBxi7tHY8yXERU2dqtGwJFWJfys3oNEYU3J0Hb9iT6Rt4rttcq/exec';

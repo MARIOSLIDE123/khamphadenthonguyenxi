@@ -165,7 +165,15 @@ export const LeaderboardPage: React.FC<Props> = ({ onBackToHome }) => {
 
       {/* TOP 3 PODIUM */}
       {top3.length > 0 && (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4">
+        <div
+          className={`pt-4 ${
+            top3.length === 1
+              ? 'flex justify-center'
+              : top3.length === 2
+              ? 'grid grid-cols-1 md:grid-cols-2 max-w-2xl mx-auto gap-4'
+              : 'grid grid-cols-1 md:grid-cols-3 gap-4'
+          }`}
+        >
           {/* Rank 2 (Silver) */}
           {top3[1] && (
             <div
@@ -192,6 +200,8 @@ export const LeaderboardPage: React.FC<Props> = ({ onBackToHome }) => {
           {top3[0] && (
             <div
               className={`order-1 md:order-2 p-6 md:-mt-4 rounded-3xl border-4 shadow-2xl text-center space-y-3 relative overflow-hidden ${
+                top3.length === 1 ? 'w-full max-w-md' : ''
+              } ${
                 top3[0].isCurrent
                   ? 'bg-amber-100/70 border-[#B93632] ring-4 ring-[#D9A441]'
                   : 'bg-gradient-to-b from-amber-50 to-white border-[#D9A441]'

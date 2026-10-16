@@ -24,75 +24,11 @@ class MemoryStore {
   public transactions: Map<string, ProcessedTransaction> = new Map();
 
   constructor() {
-    // Seed initial historical benchmark data for public demonstration if empty
-    this.seedInitialBenchmark();
+    // Only real registered students from live learning sessions
   }
 
   private seedInitialBenchmark() {
-    // Only realistic top benchmark learners to show leaderboard structure
-    const sampleStudents = [
-      {
-        studentId: 'STU_XN001',
-        fullName: 'Nguyễn Đình Khải',
-        schoolName: 'Trường Tiểu học Nghi Hợp',
-        className: '4A',
-        publicDisplayName: 'Nguyễn Đ. Khải - TH Nghi Hợp',
-        createdAt: new Date(Date.now() - 86400000 * 2).toISOString(),
-        score: 135,
-        correct: 14,
-        total: 15,
-        seconds: 1420
-      },
-      {
-        studentId: 'STU_XN002',
-        fullName: 'Trần Mai Phương',
-        schoolName: 'Trường Tiểu học Nguyễn Xí',
-        className: '5B',
-        publicDisplayName: 'Trần M. Phương - TH Nguyễn Xí',
-        createdAt: new Date(Date.now() - 86400000).toISOString(),
-        score: 125,
-        correct: 13,
-        total: 15,
-        seconds: 1650
-      },
-      {
-        studentId: 'STU_XN003',
-        fullName: 'Lê Hoàng Nam',
-        schoolName: 'Trường Tiểu học Đông Lộc',
-        className: '5A',
-        publicDisplayName: 'Lê H. Nam - TH Đông Lộc',
-        createdAt: new Date(Date.now() - 43200000).toISOString(),
-        score: 110,
-        correct: 12,
-        total: 15,
-        seconds: 1890
-      }
-    ];
-
-    sampleStudents.forEach((st) => {
-      this.students.set(st.studentId, {
-        studentId: st.studentId,
-        fullName: st.fullName,
-        schoolName: st.schoolName,
-        className: st.className,
-        publicDisplayName: st.publicDisplayName,
-        createdAt: st.createdAt
-      });
-
-      const sessId = `SES_${st.studentId}`;
-      this.sessions.set(sessId, {
-        sessionId: sessId,
-        studentId: st.studentId,
-        startedAt: st.createdAt,
-        lastSeenAt: new Date().toISOString(),
-        activeSeconds: st.seconds,
-        completedModules: ['topic-1', 'topic-2', 'topic-3', 'tour-360'],
-        totalScore: st.score,
-        totalCorrect: st.correct,
-        totalQuestions: st.total,
-        attempts: new Map()
-      });
-    });
+    // Kept empty to display only genuine participating students
   }
 
   // Create safe display name from full name & school
