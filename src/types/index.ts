@@ -129,3 +129,13 @@ export interface Badge {
   requirement: string;
   category: 'historical' | 'arena' | 'exploration' | 'dedication';
 }
+
+export interface ActivityLogItem {
+  id: string;
+  title: string;
+  category: 'register' | 'topic' | 'quiz' | 'arena' | 'tour';
+  points: number;
+  timestamp: string;
+  details?: string;
+}
+

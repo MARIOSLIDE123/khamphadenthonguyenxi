@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, useEffect, useRef, useCallback } from 'react';
-import { LearnerProfile, SessionState, Badge } from '../types';
+import { LearnerProfile, SessionState, Badge, ActivityLogItem } from '../types';
 import { apiClient, generateTransactionId } from '../services/api';
+import { getLocalActivityHistory } from '../services/localStore';
 import { BADGES_LIST } from '../data/arena';
 import { soundEffects } from '../services/soundEffects';
 
@@ -20,6 +21,8 @@ interface SessionContextType {
   updateScoreFromAnswer: (pointsAwarded: number, isCorrect: boolean, newTotalScore: number, newTotalCorrect: number) => void;
   earnedBadges: Badge[];
   activeSeconds: number;
+  activityHistory: ActivityLogItem[];
+  refreshActivityHistory: () => void;
 }
 
 const SessionContext = createContext<SessionContextType | undefined>(undefined);
@@ -46,6 +49,11 @@ export const SessionProvider: React.FC<{ children: React.ReactNode }> = ({ child
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [soundEnabled, setSoundEnabled] = useState<boolean>(() => soundEffects.isEnabled());
   const [activeSeconds, setActiveSeconds] = useState<number>(session?.activeSeconds || 0);
+  const [activityHistory, setActivityHistory] = useState<ActivityLogItem[]>(() => getLocalActivityHistory());
+
+  const refreshActivityHistory = useCallback(() => {
+    setActivityHistory(getLocalActivityHistory());
+  }, []);
 
   // Sync state with local storage
   useEffect(() => {
@@ -137,6 +145,7 @@ export const SessionProvider: React.FC<{ children: React.ReactNode }> = ({ child
       setLearner(data.student);
       setSession(data.session);
       setActiveSeconds(data.session.activeSeconds);
+      refreshActivityHistory();
       soundEffects.playCorrect();
     } finally {
       setIsLoading(false);
@@ -155,7 +164,8 @@ export const SessionProvider: React.FC<{ children: React.ReactNode }> = ({ child
     setActiveSeconds(0);
     localStorage.removeItem('nguyen_xi_learner');
     localStorage.removeItem('nguyen_xi_session');
-  }, [session, learner]);
+    refreshActivityHistory();
+  }, [session, learner, refreshActivityHistory]);
 
   // Record Activity helper
   const recordActivityGeneric = async (activityId: string, activityType: any) => {
@@ -179,6 +189,7 @@ export const SessionProvider: React.FC<{ children: React.ReactNode }> = ({ child
             completedModules: res.completedModules
           };
         });
+        refreshActivityHistory();
       }
     } catch (err: any) {
       console.warn('Ghi nhận hoạt động không thành công:', err.message);
@@ -216,6 +227,7 @@ export const SessionProvider: React.FC<{ children: React.ReactNode }> = ({ child
         totalQuestions: prev.totalQuestions + 1
       };
     });
+    refreshActivityHistory();
   };
 
   // Calculate earned badges based on progress
@@ -253,7 +265,9 @@ export const SessionProvider: React.FC<{ children: React.ReactNode }> = ({ child
         recordArenaCompleted,
         updateScoreFromAnswer,
         earnedBadges,
-        activeSeconds
+        activeSeconds,
+        activityHistory,
+        refreshActivityHistory
       }}
     >
       {children}
