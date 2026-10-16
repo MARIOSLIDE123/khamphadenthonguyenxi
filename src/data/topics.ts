@@ -136,6 +136,7 @@ export const TOPICS_DATA: TopicItem[] = [
     period: 'Nghệ thuật kiến trúc truyền thống',
     imageUrl: '/images/topics/topic-5.jpg',
     imageCaption: 'Cổng Nghi môn uy nghi, cổ kính với nghệ thuật kiến trúc đặc trưng tại Đền thờ Nguyễn Xí.',
+    audioUrl: '/audio/topics/topic-5.wav',
     contentParagraphs: [
       'Đền thờ Nguyễn Xí được thiết kế theo lối kiến trúc truyền thống "Nội công ngoại quốc" bề thế và thâm nghiêm. Không gian tổng thể được quy hoạch hài hòa giữa cảnh quan thiên nhiên và các công trình thờ tự.',
       'Phía trước đền là hồ bán nguyệt xanh mát, mang ý nghĩa tụ thủy tụ phúc. Tiếp theo là hệ thống nghi môn tứ trụ uy nghi, đắp nổi câu đối và các biểu tượng mây lành.',
@@ -168,6 +169,7 @@ export const TOPICS_DATA: TopicItem[] = [
     period: 'Vinh danh ngày 31/12/2020',
     imageUrl: '/images/topics/topic-6.jpg',
     imageCaption: 'Di tích quốc gia đặc biệt Đền thờ Nguyễn Xí – biểu tượng trường tồn của lòng tri ân và tự hào lịch sử.',
+    audioUrl: '/audio/topics/topic-6.wav',
     contentParagraphs: [
       'Trải qua hơn 550 năm với bao thăng trầm của lịch sử và thời gian, di tích Lăng mộ và Đền thờ Nguyễn Xí vẫn được các thế hệ con cháu và nhân dân địa phương nâng niu, giữ gìn gần như nguyên vẹn vẻ trang nghiêm cổ kính.',
       'Ghi nhận giá trị lịch sử, văn hóa và nghệ thuật kiến trúc đặc sắc này, ngày 31/12/2020, Thủ tướng Chính phủ nước Cộng hòa Xã hội Chủ nghĩa Việt Nam đã ký Quyết định số 2280/QĐ-TTg chính thức xếp hạng Lăng mộ và Đền thờ Nguyễn Xí là Di tích quốc gia đặc biệt.',
@@ -200,6 +202,7 @@ export const TOPICS_DATA: TopicItem[] = [
     period: 'Hành động của thế hệ trẻ hôm nay',
     imageUrl: '/images/topics/topic-7.jpg',
     imageCaption: 'Không gian thờ tự tôn nghiêm, thanh tịnh cần được trân trọng và gìn giữ cho muôn đời sau.',
+    audioUrl: '/audio/topics/topic-7.wav',
     contentParagraphs: [
       'Mỗi di tích lịch sử là một viên ngọc quý chứa đựng linh hồn, trí tuệ và công sức của tổ tiên để lại. Khi đến thăm Đền thờ Nguyễn Xí hay bất kỳ di tích lịch sử nào, chúng ta cần thể hiện văn hóa ứng xử văn minh, tôn trọng và trân quý.',
       'Học sinh và người tham quan cần thực hiện đúng các quy định: mặc trang phục trang nghiêm, lịch sự; giữ trật tự nơi thờ tự, không nô đùa chạy nhảy làm ảnh hưởng không gian tôn nghiêm.',
