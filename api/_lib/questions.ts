@@ -14,10 +14,10 @@ export const SERVER_QUESTIONS: ServerQuestion[] = [
     topicTitle: 'Nguyễn Xí là ai?',
     title: 'Năm sinh và năm mất của danh thần Nguyễn Xí',
     instruction: 'Chọn một phương án đúng nhất về năm sinh và năm mất của Nguyễn Xí.',
-    hint: 'Ông hưởng thọ 68 tuổi trong giai đoạn thế kỷ XV.',
-    options: ['1397 – 1465', '1400 – 1468', '1418 – 1485', '1390 – 1450'],
-    correctAnswer: '1397 – 1465',
-    explanation: 'Nguyễn Xí sinh năm 1397 và qua đời năm 1465, là danh tướng và phụ chính đại thần kiệt xuất thời Hậu Lê.'
+    hint: 'Nguyễn Xí sinh năm Đinh Sửu (1397) và hưởng thọ 68 tuổi trong giai đoạn thế kỷ XV.',
+    options: ['Năm Đinh Sửu 1397 – 1465', '1400 – 1468', '1418 – 1485', '1390 – 1450'],
+    correctAnswer: 'Năm Đinh Sửu 1397 – 1465',
+    explanation: 'Nguyễn Xí sinh năm Đinh Sửu (1397) tại làng Thượng Xá (nay là xã Đông Lộc, tỉnh Nghệ An) và qua đời năm 1465, là danh tướng và phụ chính đại thần kiệt xuất thời Hậu Lê.'
   },
   {
     id: 'q2',
@@ -26,15 +26,15 @@ export const SERVER_QUESTIONS: ServerQuestion[] = [
     topicTitle: 'Nguyễn Xí là ai?',
     title: 'Quê hương của danh tướng Nguyễn Xí',
     instruction: 'Chọn địa danh là quê hương gốc của danh tướng Nguyễn Xí.',
-    hint: 'Thuộc huyện Nghi Lộc xưa của vùng đất xứ Nghệ.',
+    hint: 'Làng Thượng Xá nay thuộc xã Đông Lộc.',
     options: [
-      'Làng Thượng Xá, nay thuộc huyện Nghi Lộc, tỉnh Nghệ An',
+      'Làng Thượng Xá, nay thuộc xã Đông Lộc (trước đây là xã Khánh Hợp, huyện Nghi Lộc, tỉnh Nghệ An)',
       'Lam Sơn, huyện Thọ Xuân, tỉnh Thanh Hóa',
       'Đông Kinh, Thăng Long (Hà Nội)',
       'Làng Vị Xuyên, tỉnh Nam Định'
     ],
-    correctAnswer: 'Làng Thượng Xá, nay thuộc huyện Nghi Lộc, tỉnh Nghệ An',
-    explanation: 'Nguyễn Xí quê ở làng Thượng Xá, nay thuộc xã Khánh Hợp (trước đây là Nghi Hợp), huyện Nghi Lộc, tỉnh Nghệ An.'
+    correctAnswer: 'Làng Thượng Xá, nay thuộc xã Đông Lộc (trước đây là xã Khánh Hợp, huyện Nghi Lộc, tỉnh Nghệ An)',
+    explanation: 'Nguyễn Xí sinh ra ở làng Thượng Xá, nay thuộc xã Đông Lộc (trước đây là xã Khánh Hợp, huyện Nghi Lộc, tỉnh Nghệ An).'
   },
   {
     id: 'q3',
@@ -216,22 +216,22 @@ export const SERVER_QUESTIONS: ServerQuestion[] = [
     topicTitle: 'Lịch sử hình thành đền',
     title: 'Sắp xếp các sự kiện cuộc đời và di tích Nguyễn Xí theo thứ tự thời gian',
     instruction: 'Kéo thả hoặc nhấn nút để xếp các sự kiện từ sớm nhất đến muộn nhất.',
-    hint: 'Bắt đầu từ năm sinh 1397 đến khi được xếp hạng Di tích quốc gia đặc biệt năm 2020.',
+    hint: 'Bắt đầu từ năm sinh Đinh Sửu (1397) đến khi được xếp hạng Di tích quốc gia đặc biệt năm 2020.',
     options: [
-      'Nguyễn Xí sinh ra tại làng Thượng Xá (1397)',
+      'Nguyễn Xí sinh năm Đinh Sửu tại làng Thượng Xá (1397)',
       'Gia nhập khởi nghĩa Lam Sơn cùng Lê Lợi (1418)',
       'Nguyễn Xí tạ thế, triều đình tổ chức quốc tang (1465)',
       'Vua Lê Thánh Tông ban sắc chỉ cho xây dựng Đền thờ (1467)',
       'Thủ tướng ký Quyết định xếp hạng Di tích quốc gia đặc biệt (2020)'
     ],
     correctAnswer: [
-      'Nguyễn Xí sinh ra tại làng Thượng Xá (1397)',
+      'Nguyễn Xí sinh năm Đinh Sửu tại làng Thượng Xá (1397)',
       'Gia nhập khởi nghĩa Lam Sơn cùng Lê Lợi (1418)',
       'Nguyễn Xí tạ thế, triều đình tổ chức quốc tang (1465)',
       'Vua Lê Thánh Tông ban sắc chỉ cho xây dựng Đền thờ (1467)',
       'Thủ tướng ký Quyết định xếp hạng Di tích quốc gia đặc biệt (2020)'
     ],
-    explanation: 'Trình tự chính xác: Sinh năm 1397 → Khởi nghĩa Lam Sơn 1418 → Tạ thế 1465 → Xây dựng đền 1467 → Xếp hạng Di tích quốc gia đặc biệt 2020.'
+    explanation: 'Trình tự chính xác: Sinh năm Đinh Sửu 1397 → Khởi nghĩa Lam Sơn 1418 → Tạ thế 1465 → Xây dựng đền 1467 → Xếp hạng Di tích quốc gia đặc biệt 2020.'
   },
   {
     id: 'q14',
@@ -357,7 +357,7 @@ export const SERVER_QUESTIONS: ServerQuestion[] = [
     wordBank: ['Nghi Lộc', 'Nghĩa Vương', 'Côn Sơn', 'Đông Đô'],
     blankCount: 2,
     correctAnswer: ['Nghi Lộc', 'Nghĩa Vương'],
-    explanation: 'Nguyễn Xí sinh ra tại Nghi Lộc xứ Nghệ và sau này được suy tôn tước hiệu Nghĩa Vương cao quý.'
+    explanation: 'Nguyễn Xí sinh ra ở làng Thượng Xá, nay thuộc xã Đông Lộc (trước đây là xã Khánh Hợp, huyện Nghi Lộc, tỉnh Nghệ An) và sau này được suy tôn tước hiệu Nghĩa Vương cao quý.'
   },
   {
     id: 'q22',
@@ -385,13 +385,13 @@ export const SERVER_QUESTIONS: ServerQuestion[] = [
     hint: 'Mỗi mốc năm ứng với một dấu ấn không thể phai mờ.',
     matchingPairs: {
       left: [
-        { id: 'l1', text: 'Năm 1397' },
+        { id: 'l1', text: 'Năm Đinh Sửu (1397)' },
         { id: 'l2', text: 'Năm 1418' },
         { id: 'l3', text: 'Năm 1465' },
         { id: 'l4', text: 'Năm 1467' }
       ],
       right: [
-        { id: 'r1', text: 'Năm sinh của danh thần Nguyễn Xí' },
+        { id: 'r1', text: 'Năm sinh Nguyễn Xí (nay là xã Đông Lộc, tỉnh Nghệ An)' },
         { id: 'r2', text: 'Gia nhập cuộc khởi nghĩa Lam Sơn' },
         { id: 'r3', text: 'Nguyễn Xí tạ thế, triều đình làm quốc tang' },
         { id: 'r4', text: 'Vua Lê Thánh Tông ban lệnh dựng đền thờ' }
@@ -403,7 +403,7 @@ export const SERVER_QUESTIONS: ServerQuestion[] = [
       l3: 'r3',
       l4: 'r4'
     },
-    explanation: 'Ghép đúng: 1397 (Năm sinh) - 1418 (Gia nhập Lam Sơn) - 1465 (Tạ thế) - 1467 (Xây dựng đền thờ).'
+    explanation: 'Ghép đúng: Năm Đinh Sửu 1397 (Năm sinh tại xã Đông Lộc, Nghệ An) - 1418 (Gia nhập Lam Sơn) - 1465 (Tạ thế) - 1467 (Xây dựng đền thờ).'
   },
   {
     id: 'q24',

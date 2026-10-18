@@ -149,7 +149,7 @@ export const LeaderboardPage: React.FC<Props> = ({ onBackToHome }) => {
             type="text"
             value={schoolFilter}
             onChange={(e) => setSchoolFilter(e.target.value)}
-            placeholder="Lọc trường (ví dụ: Nghi Hợp...)"
+            placeholder="Lọc trường (ví dụ: Đông Lộc...)"
             className="px-3.5 py-2.5 bg-[#FFF6E5] border border-[#D9A441]/70 rounded-xl text-xs md:text-sm text-[#21354D] placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#B93632]"
           />
         </div>

@@ -8,8 +8,8 @@ export const CLIENT_QUESTIONS: ClientQuestion[] = [
     topicTitle: 'Nguyễn Xí là ai?',
     title: 'Năm sinh và năm mất của danh thần Nguyễn Xí',
     instruction: 'Chọn một phương án đúng nhất về năm sinh và năm mất của Nguyễn Xí.',
-    hint: 'Ông hưởng thọ 68 tuổi trong giai đoạn thế kỷ XV.',
-    options: ['1397 – 1465', '1400 – 1468', '1418 – 1485', '1390 – 1450']
+    hint: 'Nguyễn Xí sinh năm Đinh Sửu (1397) và hưởng thọ 68 tuổi trong giai đoạn thế kỷ XV.',
+    options: ['Năm Đinh Sửu 1397 – 1465', '1400 – 1468', '1418 – 1485', '1390 – 1450']
   },
   {
     id: 'q2',
@@ -18,9 +18,9 @@ export const CLIENT_QUESTIONS: ClientQuestion[] = [
     topicTitle: 'Nguyễn Xí là ai?',
     title: 'Quê hương của danh tướng Nguyễn Xí',
     instruction: 'Chọn địa danh là quê hương gốc của danh tướng Nguyễn Xí.',
-    hint: 'Thuộc huyện Nghi Lộc xưa của vùng đất xứ Nghệ.',
+    hint: 'Làng Thượng Xá nay thuộc xã Đông Lộc.',
     options: [
-      'Làng Thượng Xá, nay thuộc huyện Nghi Lộc, tỉnh Nghệ An',
+      'Làng Thượng Xá, nay thuộc xã Đông Lộc (trước đây là xã Khánh Hợp, huyện Nghi Lộc, tỉnh Nghệ An)',
       'Lam Sơn, huyện Thọ Xuân, tỉnh Thanh Hóa',
       'Đông Kinh, Thăng Long (Hà Nội)',
       'Làng Vị Xuyên, tỉnh Nam Định'
@@ -163,10 +163,10 @@ export const CLIENT_QUESTIONS: ClientQuestion[] = [
     topicTitle: 'Lịch sử hình thành đền',
     title: 'Sắp xếp các sự kiện cuộc đời và di tích Nguyễn Xí theo thứ tự thời gian',
     instruction: 'Kéo thả hoặc nhấn các nút điều chỉnh để xếp các sự kiện từ sớm nhất đến muộn nhất.',
-    hint: 'Bắt đầu từ năm sinh 1397 đến khi được xếp hạng Di tích quốc gia đặc biệt năm 2020.',
+    hint: 'Bắt đầu từ năm sinh Đinh Sửu (1397) đến khi được xếp hạng Di tích quốc gia đặc biệt năm 2020.',
     options: [
       'Vua Lê Thánh Tông ban sắc chỉ cho xây dựng Đền thờ (1467)',
-      'Nguyễn Xí sinh ra tại làng Thượng Xá (1397)',
+      'Nguyễn Xí sinh năm Đinh Sửu tại làng Thượng Xá (1397)',
       'Thủ tướng ký Quyết định xếp hạng Di tích quốc gia đặc biệt (2020)',
       'Gia nhập khởi nghĩa Lam Sơn cùng Lê Lợi (1418)',
       'Nguyễn Xí tạ thế, triều đình tổ chức quốc tang (1465)'
@@ -289,13 +289,13 @@ export const CLIENT_QUESTIONS: ClientQuestion[] = [
     hint: 'Mỗi mốc năm ứng với một dấu ấn không thể phai mờ.',
     matchingPairs: {
       left: [
-        { id: 'l1', text: 'Năm 1397' },
+        { id: 'l1', text: 'Năm Đinh Sửu (1397)' },
         { id: 'l2', text: 'Năm 1418' },
         { id: 'l3', text: 'Năm 1465' },
         { id: 'l4', text: 'Năm 1467' }
       ],
       right: [
-        { id: 'r1', text: 'Năm sinh của danh thần Nguyễn Xí' },
+        { id: 'r1', text: 'Năm sinh Nguyễn Xí (nay là xã Đông Lộc, tỉnh Nghệ An)' },
         { id: 'r2', text: 'Gia nhập cuộc khởi nghĩa Lam Sơn' },
         { id: 'r3', text: 'Nguyễn Xí tạ thế, triều đình làm quốc tang' },
         { id: 'r4', text: 'Vua Lê Thánh Tông ban lệnh dựng đền thờ' }

@@ -11,21 +11,21 @@ export const TOPICS_DATA: TopicItem[] = [
     imageCaption: 'Tượng đồng thờ Thái sư Cương Quốc công Nguyễn Xí uy nghiêm tại đền thờ.',
     audioUrl: '/audio/topics/topic-1.wav',
     contentParagraphs: [
-      'Nguyễn Xí (1397 – 1465) sinh ra tại làng Thượng Xá, nay thuộc xã Khánh Hợp (trước đây là xã Nghi Hợp), huyện Nghi Lộc, tỉnh Nghệ An. Từ nhỏ, ông đã nổi tiếng thông minh, nhanh nhẹn, giàu lòng quả cảm và có chí lớn.',
+      'Nguyễn Xí sinh năm Đinh Sửu (1397), mất năm Ất Dậu (1465), sinh ra ở làng Thượng Xá, nay thuộc xã Đông Lộc (trước đây là xã Khánh Hợp, huyện Nghi Lộc, tỉnh Nghệ An). Từ nhỏ, ông đã nổi tiếng thông minh, nhanh nhẹn, giàu lòng quả cảm và có chí lớn.',
       'Ông là một trong những vị khai quốc công thần kiệt xuất nhất của triều đại Hậu Lê. Với tài thao lược quân sự và lòng trung kiên bất khuất, Nguyễn Xí đã phụng sự và giữ trọng trách phụ chính đại thần qua bốn đời vua Lê: Lê Thái Tổ, Lê Thái Tông, Lê Nhân Tông và vua Lê Thánh Tông.',
       'Sau khi qua đời, ông được triều đình truy tặng nhiều tước hiệu cao quý, trong đó có Thái sư Cương Quốc công, và về sau được suy tôn tước Nghĩa Vương. Lòng trung nghĩa và tài năng của ông trở thành tấm gương sáng ngời trong lịch sử dựng nước và giữ nước của dân tộc Việt Nam.'
     ],
     keyFacts: [
-      'Sinh năm 1397 – Mất năm 1465 tại Nghệ An.',
+      'Nguyễn Xí sinh năm Đinh Sửu (1397) tại làng Thượng Xá (nay là xã Đông Lộc, tỉnh Nghệ An) – Mất năm 1465.',
       'Phụng sự xuất sắc qua 4 đời vua nhà Lê.',
       'Tước vị danh xưng cao quý: Thái sư Cương Quốc công, Nghĩa Vương.',
       'Là danh tướng văn võ song toàn, một lòng vì nước vì dân.'
     ],
     interactivePrompt: {
       question: 'Danh tướng Nguyễn Xí sinh vào năm nào và mất vào năm nào?',
-      options: ['1397 – 1465', '1400 – 1470', '1390 – 1455', '1428 – 1467'],
+      options: ['Năm Đinh Sửu 1397 – 1465', '1400 – 1470', '1390 – 1455', '1428 – 1467'],
       correctIndex: 0,
-      explanation: 'Chính xác! Nguyễn Xí sinh năm 1397 và qua đời năm 1465, hưởng thọ 68 tuổi.'
+      explanation: 'Chính xác! Nguyễn Xí sinh năm Đinh Sửu (1397), sinh ra ở làng Thượng Xá, nay thuộc xã Đông Lộc (trước đây là xã Khánh Hợp, huyện Nghi Lộc, tỉnh Nghệ An) và qua đời năm 1465, hưởng thọ 68 tuổi.'
     },
     mindMapKey: 'nguyen-xi'
   },

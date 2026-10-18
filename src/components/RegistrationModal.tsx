@@ -105,7 +105,7 @@ export const RegistrationModal: React.FC = () => {
                     type="text"
                     value={schoolName}
                     onChange={(e) => setSchoolName(e.target.value)}
-                    placeholder="Ví dụ: Tiểu học Nghi Hợp hoặc Đông Lộc..."
+                    placeholder="Ví dụ: Tiểu học Đông Lộc hoặc Khánh Hợp..."
                     disabled={isLoading}
                     className="w-full pl-11 pr-4 py-3 bg-white border-2 border-[#D9A441]/60 rounded-xl text-[#21354D] placeholder-gray-400 focus:outline-none focus:border-[#B93632] focus:ring-2 focus:ring-[#B93632]/20 font-medium transition"
                   />
@@ -136,7 +136,7 @@ export const RegistrationModal: React.FC = () => {
             <div className="flex items-start gap-2.5 p-3.5 bg-amber-50 rounded-xl border border-amber-200/80 text-xs text-amber-900">
               <ShieldCheck className="w-4 h-4 flex-shrink-0 text-[#307A67] mt-0.5" />
               <p>
-                <strong>Bảo mật thông tin:</strong> Tên đầy đủ và lớp được bảo mật trong hệ thống quản lý học tập. Bảng xếp hạng công khai sẽ hiển thị tên viết tắt an toàn (ví dụ: <em>Nguyễn H. Đ. - TH Nghi Hợp</em>).
+                <strong>Bảo mật thông tin:</strong> Tên đầy đủ và lớp được bảo mật trong hệ thống quản lý học tập. Bảng xếp hạng công khai sẽ hiển thị tên viết tắt an toàn (ví dụ: <em>Nguyễn H. Đ. - TH Đông Lộc</em>).
               </p>
             </div>
 

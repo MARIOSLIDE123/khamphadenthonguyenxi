@@ -122,7 +122,7 @@ export const HeritageTopicsPage: React.FC<Props> = ({ onBackToHome }) => {
                 <h3 className="text-xl md:text-2xl font-bold font-heritage text-white">
                   THÁI SƯ NGUYỄN XÍ
                 </h3>
-                <span className="text-xs text-[#FFF6E5] font-medium">(1397 – 1465 • Nghĩa Vương)</span>
+                <span className="text-xs text-[#FFF6E5] font-medium">(Đinh Sửu 1397 – 1465 • Nghĩa Vương)</span>
               </div>
             </div>
 
@@ -163,7 +163,7 @@ export const HeritageTopicsPage: React.FC<Props> = ({ onBackToHome }) => {
                   <span>Công Lao Với Quê Hương</span>
                 </div>
                 <p className="text-xs text-gray-700 leading-relaxed">
-                  Khai hoang mở đất lấn biển vùng Nghi Lộc – Cửa Lò, đắp đê ngăn mặn, đào kênh dẫn thủy, xây cầu mở chợ ấm no cho nhân dân.
+                  Nguyễn Xí sinh ra ở làng Thượng Xá, nay thuộc xã Đông Lộc (trước đây là xã Khánh Hợp, huyện Nghi Lộc, tỉnh Nghệ An). Ông đã hướng dẫn nhân dân khai hoang mở đất, lấn biển, đắp đê ngăn mặn, đào kênh dẫn thủy, xây cầu mở chợ ấm no.
                 </p>
               </div>
 
